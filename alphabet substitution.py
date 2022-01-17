@@ -36,8 +36,9 @@ def convertlisttostring(s):
 def main():
     loop = True
     while loop:
+        step_max = int(input("Enter max number of steps: "))
         word = input("Enter message: ")
-        step = random.randrange(1,3,1)
+        step = random.randrange(1,step_max,1)
 
         word = word.lower()
         word = list(word)
