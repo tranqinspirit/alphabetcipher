@@ -9,7 +9,7 @@ def cipher(word, step):
     cipher = word
     counter = 0
     for x in cipher:
-        if x != ' ':
+        if (x.isalpha()):
             index = alphabet.index(cipher[counter])
             
             check = -1
